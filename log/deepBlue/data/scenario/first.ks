@@ -17,7 +17,6 @@
 @call storage="tyrano.ks"
 [call storage="system/chara_define.ks"]
 
-
 ;ゲームで必ず必要な初期化処理はこのファイルに記述するのがオススメ
 
 ;画面の初期化
@@ -25,6 +24,7 @@
 [stopbgm]
 [cancelskip]
 [autostop]
+[clearfix name="role_button"]
 
 ;メッセージボックスは非表示
 @layopt layer="message" visible=false
@@ -82,7 +82,6 @@
 [setreplay name="02_about_name" storage="scene/02_about_name.ks" label="*start"]
 [setreplay name="05_meteor_shower" storage="scene/05_meteor_shower.ks" label="*start"]
 [setreplay name="06_underground_arrival" storage="scene/06_underground_arrival.ks" label="*start"]
-
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Rapter ここまで

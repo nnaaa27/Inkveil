@@ -132,7 +132,7 @@
 いや、隠しているつもりでもないんだが…。[p]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/閉じ.png" local_file="閉じ.png" cross="true" time="600" reflect="false"]
 #佐伯和己
-…………。
+…………。[r]
 そうだな。まあ、[p]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/焦り.png" local_file="焦り.png" cross="true" time="600" reflect="false"]
 #佐伯和己
