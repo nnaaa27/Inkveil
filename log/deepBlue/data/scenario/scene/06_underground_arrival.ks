@@ -8,6 +8,11 @@
 [bg storage="地下室.jpg" method="fadeIn" time="1000" local_file="地下室.jpg"]
 [playbgm storage="混濁.mp3" local_file="混濁.mp3" time="1000" volume="50" loop="true"]
 
+;debug
+; [chara_show storage="chara/佐伯和己/普通.png" local_file="普通.png" left="175" top="30" width="440" time="1000" wait="true" zindex="1" name="佐伯和己" reflect="false" depth="front"]
+; [chara_show storage="chara/瀬奈亜璃杏/s_a笑み.png" local_file="s_a笑み.png" left="600" top="110" width="464" time="1000" wait="true" zindex="1" name="瀬奈亜璃杏" reflect="false" depth="front"]
+; [jump target=*debug]
+
 [chara_show storage="chara/佐伯和己/真剣.png" local_file="真剣.png" left="380" top="37" width="470" time="1000" wait="true" zindex="1" name="佐伯和己" reflect="false" depth="front"]
 
 #
@@ -145,16 +150,16 @@
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t号泣2.png" local_file="s_t号泣2.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 違います…！[r]
-和己さんは何も悪くない…！[p]
-[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t泣き2.png" local_file="s_t泣き2.png" cross="true" time="600" reflect="false"]
+和己さんは何も悪くない……！[p]
 #瀬奈亜璃杏
 ずっと、ずっと…！[r]
-きららちゃんのことだって、城木さんのことだって…！[p]
+きららちゃんのことだって、城木さんのことだって……！[p]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/悲.png" local_file="悲.png" cross="true" time="600" reflect="false"]
 #佐伯和己
 ……。[p]
+[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t泣き2.png" local_file="s_t泣き2.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
-それなのに、私のことまで…！[p]
+それなのに、私のことまで……！[p]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/閉じ.png" local_file="閉じ.png" cross="true" time="600" reflect="false"]
 #佐伯和己
 ……。[p]
@@ -162,7 +167,7 @@
 #佐伯和己
 …亜璃杏。[r]
 俺の夢は、なんだと思う。[p]
-[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t号泣4.png" local_file="s_t号泣4.png" cross="true" time="600" reflect="false"]
+[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t号泣1.png" local_file="s_t号泣1.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 ……和己さんの、夢？[p]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/笑み.png" local_file="笑み.png" cross="true" time="600" reflect="false"]
@@ -176,13 +181,12 @@
 #佐伯和己
 手伝わせてくれないか。[r]
 お前の夢も、俺の夢も、叶えさせてほしい。[p]
-[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t号泣1.png" local_file="s_t号泣1.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 ……。[p]
 #瀬奈亜璃杏
 …私、まだ世界一のアイドルに、なりたいです。[r]
 でも、[p]
-[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t泣き2.png" local_file="s_t泣き2.png" cross="true" time="600" reflect="false"]
+[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t泣き1.png" local_file="s_t泣き1.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 貴方に、これ以上辛い思いをしてほしくなかった。[r]
 こんなものまで、背負わせたくなかった…！[p]
@@ -193,16 +197,18 @@
 …本当に、まだ、アイドルを続けられるか。[p]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t号泣1.png" local_file="s_t号泣1.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
-…はい。私、まだ諦められない。[p]
+……はい。私、まだ諦められない。[r]
+それに…[p]
 #瀬奈亜璃杏
-それに…それが、貴方の夢なら。[p]
+それが、貴方の夢なら。[p]
 #佐伯和己
 …分かった。[p]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/真剣.png" local_file="真剣.png" cross="true" time="600" reflect="false"]
 #佐伯和己
 明日のライブ、絶対に成功させよう。[p]
+[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t号泣5.png" local_file="s_t号泣5_.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
-…はい。[p]
+はい。[p]
 
 [p]
 
