@@ -9,11 +9,11 @@
 [playbgm storage="混濁.mp3" local_file="混濁.mp3" time="1000" volume="50" loop="true"]
 
 ;debug
-; [chara_show storage="chara/佐伯和己/普通.png" local_file="普通.png" left="175" top="30" width="440" time="1000" wait="true" zindex="1" name="佐伯和己" reflect="false" depth="front"]
-; [chara_show storage="chara/瀬奈亜璃杏/s_a笑み.png" local_file="s_a笑み.png" left="600" top="110" width="464" time="1000" wait="true" zindex="1" name="瀬奈亜璃杏" reflect="false" depth="front"]
+; [add_kazumi]
+; [add_aria]
 ; [jump target=*debug]
 
-[chara_show storage="chara/佐伯和己/真剣.png" local_file="真剣.png" left="380" top="37" width="470" time="1000" wait="true" zindex="1" name="佐伯和己" reflect="false" depth="front"]
+[add_kazumi img="真剣.png" left=380]
 
 #
 無機質な石張りの空間の中、設置された手術台の上、[r]
@@ -44,7 +44,7 @@
 電線のようなもので繋がれていた。[p]
 
 まるで、首輪を外そうとする獣のように藻掻き、[r]
-力なく視線を床に沈ませ、何度か痙攣し――[p]
+力なく視線を床に沈ませ何度か痙攣し――[p]
 
 ――もう動くことはなくなった。[p]
 
@@ -55,17 +55,18 @@
 ; #瀬奈亜璃杏
 ; [dice array_dice="100" adjusted_val="0" aim="SAN" secret="" num_success="50" flag_success="below" chara_name="瀬奈亜璃杏" user_id="44069" array_result="84" result_str="SAN：【1d100】を振りました。結果は「84」失敗です。(成功値50以下)(各ダイス目：84)" val="SAN：【1d100】を振りました。結果は「84」失敗です。(成功値50以下)(各ダイス目：84)" addstory="1" name="瀬奈亜璃杏"]
 
-
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/悲.png" local_file="悲.png" cross="true" time="600" reflect="false"]
 #佐伯和己
 ……。[p]
-[chara_move left="175" top="30" width="440" anim="1" time="1000" name="佐伯和己"]
+
+[move_kazumi]
 
 #佐伯和己
 …亜璃杏。[r]
 怪我は、ないか。[p]
 
-[chara_show storage="chara/瀬奈亜璃杏/s_t絶望1.png" local_file="s_t絶望1.png" left="600" top="110" width="464" time="1000" wait="true" zindex="1" name="瀬奈亜璃杏" reflect="false" depth="front"]
+[add_aria img="s_t絶望1.png"]
+
 #瀬奈亜璃杏
 …………あ、[p]
 #瀬奈亜璃杏
@@ -88,7 +89,7 @@
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t涙目3.png" local_file="s_t涙目3.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 だって、私っ…、人を、殺したんです……。[r]
-もう……。[p]
+もう……[p]
 #佐伯和己
 ……。[p]
 
@@ -97,7 +98,7 @@
 まだ、お前は…世界一のアイドルになりたいか？[p]
 
 #瀬奈亜璃杏
-だけど……もう、なれないです。[r]
+だけど……なれないです。[r]
 私、人を、[p]
 #佐伯和己
 そのことは考えなくていい。一旦忘れろ。[p]
@@ -106,7 +107,8 @@
 …お前の意思を聞いてる。[p]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t涙目4.png" local_file="s_t涙目4.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
-…わ、私の……？[p]
+……。[r]
+私の……？[p]
 #佐伯和己
 お前が、罪悪感に耐えられないというのなら、ここで終わってもいい。[p]
 #佐伯和己
@@ -121,7 +123,7 @@
 #瀬奈亜璃杏
 ……どうして。[p]
 #瀬奈亜璃杏
-和己さんは……[r]
+和己さんは……、[r]
 どうして私に、そこまでしてくれるんですか…？[p]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/思案.png" local_file="思案.png" cross="true" time="600" reflect="false"]
 #佐伯和己
@@ -139,7 +141,7 @@
 でも、そんなの、[p]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t号泣2.png" local_file="s_t号泣2.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
-それは、私の夢で、貴方の夢じゃない…！[p]
+それは、私の夢で、貴方の夢じゃない……！[p]
 私は、人を殺したんです…！[p]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/思案.png" local_file="思案.png" cross="true" time="600" reflect="false"]
 #佐伯和己
@@ -169,13 +171,14 @@
 俺の夢は、なんだと思う。[p]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t号泣1.png" local_file="s_t号泣1.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
-……和己さんの、夢？[p]
+……。[r]
+和己さんの、夢？[p]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/笑み.png" local_file="笑み.png" cross="true" time="600" reflect="false"]
 #佐伯和己
 …俺の夢は、お前の夢を叶えることだよ。亜璃杏。[p]
 #佐伯和己
-お前は、世界一のアイドルを目指すことは、[r]
-自分の夢で俺の夢じゃないって言ったけど、違う。俺も一緒だ。[p]
+お前は、世界一のアイドルを目指すことは自分の夢で、[r]
+俺の夢じゃないって言ったけど、違う。俺も一緒だ。[p]
 #佐伯和己
 お前がもし、まだ夢を諦めてないなら。[p]
 #佐伯和己

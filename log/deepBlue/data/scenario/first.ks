@@ -55,7 +55,7 @@
     [cm  ]
     [clearfix]
     [start_keyconfig]
-    [freelayer layer="1"]
+    [freeimage layer="1"]
     [bg storage="black.jpg" method="fadeIn" time="1000" local_file="black.jpg"]
     
     ;メニューボタンの表示
@@ -69,6 +69,37 @@
     [add_theme_button ]
 [endmacro]
 
+
+[macro name="add_kazumi"]
+    [iscript]
+        if (mp.img){
+            f.file_name = "chara/佐伯和己/" + mp.img
+        }else{
+            f.file_name = "chara/佐伯和己/普通.png"
+        }
+    [endscript]
+    [chara_show storage=&f.file_name local_file=%img|"普通.png" left=%left|149 top="15" width="500"  time="1000" wait="true" zindex="1" name="佐伯和己" reflect="false" depth="front"]
+[endmacro]
+
+[macro name="move_kazumi"]
+    [chara_move left=%left|149 top="15" width="500" anim="1" time="1000" name="佐伯和己"]
+[endmacro]
+
+[macro name="add_aria"]
+    [iscript]
+        if (mp.img){
+            f.file_name = "chara/瀬奈亜璃杏/" + mp.img
+        }else{
+            f.file_name = "chara/瀬奈亜璃杏/s_a笑み.png"
+        }
+    [endscript]
+    [chara_show storage=&f.file_name local_file=%img|"s_a笑み.png" left=%left|582 top="100" width="520" time="1000" wait="true" zindex="1" name="瀬奈亜璃杏" reflect="false" depth="front"]
+[endmacro]
+
+[macro name="move_aria"]
+    [chara_move left=%left|582 top="100" width="520" anim="1" time="1000" name="佐伯和己"]
+[endmacro]
+
 [macro name="play_end"]
     [cancelskip]
     [autostop]
@@ -79,6 +110,7 @@
 
 
 ; 回想を追加
+[setreplay name="02_send_home" storage="scene/02_send_home.ks" label="*start"]
 [setreplay name="02_about_name" storage="scene/02_about_name.ks" label="*start"]
 [setreplay name="05_meteor_shower" storage="scene/05_meteor_shower.ks" label="*start"]
 [setreplay name="06_underground_arrival" storage="scene/06_underground_arrival.ks" label="*start"]

@@ -16,11 +16,23 @@
     
 [endscript]
 
-
+[macro name="replay_box"]
+    [iscript]
+        // 横
+        f.x_list = [80,310,540,770,1000];
+        // 縦
+        f.y_list = [170,320];
+        f.x=f.x_list[mp.x_num];
+        f.y1=f.y_list[mp.y_num];
+        f.y2=f.y_list[mp.y_num] + 110;
+    [endscript]
+    [replay_image_button name=%name graphic=%graphic no_graphic="../../tyrano/images/system/noimage.png" x=&f.x y=&f.y1 width=192 height=108 folder="bgimage" ]
+    [ptext layer="1" text=%text x=&f.x y=&f.y2 size="15" color="0x426667" width="1280" align="left"]
+[endmacro]
 
 *replaypage
 [cm]
-[freelayer layer="1"]
+[freeimage layer="1"]
 [button graphic="config/gallery_close2.png" enterimg="config/gallery_close2.png"  target="*backtitle" x=820 y=20 ]
 
 [iscript]
@@ -32,14 +44,18 @@
 @jump target=&tf.target_page
 
 *page_0
-[replay_image_button name="02_about_name" graphic="繁華街の駅前（夜）.jpg" no_graphic="../../tyrano/images/system/noimage.png" x=60 y=150 width=160 height=140 folder="bgimage" ]
-[ptext layer="1" text="２章 名前呼び" x="60" y="290" size="15" color="0x426667" width="1280" align="left"]
 
-[replay_image_button name="05_meteor_shower" graphic="夜空.png" no_graphic="../../tyrano/images/system/noimage.png" x=260 y=150 width=160 height=140 folder="bgimage" ]
-[ptext layer="1" text="５章 流星群" x="260" y="290" size="15" color="0x426667" width="1280" align="left"]
+[replay_box name="02_send_home" graphic="繁華街の駅前（夜）.jpg" text="２章 ある日の帰り道" x_num=0 y_num=0]
+[replay_box name="02_about_name" graphic="繁華街の駅前（夜）.jpg" text="２章 名前" x_num=1 y_num=0]
+[replay_box name="05_meteor_shower" graphic="夜空.png" text="５章 双子座流星群" x_num=2 y_num=0]
+[replay_box name="06_underground_arrival" graphic="地下室.jpg" text="６章 地下室、合流" x_num=3 y_num=0]
 
-[replay_image_button name="06_underground_arrival" graphic="地下室.jpg" no_graphic="../../tyrano/images/system/noimage.png" x=460 y=150 width=160 height=140 folder="bgimage" ]
-[ptext layer="1" text="６章 地下室、合流" x="460" y="290" size="15" color="0x426667" width="1280" align="left"]
+; [replay_box x_num=4 y_num=0]
+; [replay_box x_num=0 y_num=1]
+; [replay_box x_num=1 y_num=1]
+; [replay_box x_num=2 y_num=1]
+; [replay_box x_num=3 y_num=1]
+; [replay_box x_num=4 y_num=1]
 
 @jump target ="*common"
 

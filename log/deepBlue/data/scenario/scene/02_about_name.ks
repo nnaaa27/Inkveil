@@ -5,8 +5,13 @@
 [bg storage="繁華街の駅前（夜）.jpg" method="fadeIn" time="1000" local_file="繁華街の駅前（夜）.jpg"]
 [playbgm storage="やさしい雪.mp3" local_file="やさしい雪.mp3" time="1000" volume="50" loop="true"]
 
-[chara_show storage="chara/佐伯和己/普通.png" local_file="普通.png" left="175" top="30" width="440" time="1000" wait="true" zindex="1" name="佐伯和己" reflect="false" depth="front"]
-[chara_show storage="chara/瀬奈亜璃杏/s_a笑み.png" local_file="s_a笑み.png" left="600" top="110" width="464" time="1000" wait="true" zindex="1" name="瀬奈亜璃杏" reflect="false" depth="front"]
+[add_kazumi]
+[add_aria]
+
+;debug
+; [jump target=*debug]
+
+*next
 
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_a笑み.png" local_file="s_a笑み.png" cross="true" time="600" reflect="false"]
 
@@ -127,7 +132,6 @@
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/開口.png" local_file="開口.png" cross="true" time="600" reflect="false"]
 #佐伯和己
 まあ、じゃあ。[p]
-[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_a普通.png" local_file="s_a普通.png" cross="true" time="600" reflect="false"]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/笑み.png" local_file="笑み.png" cross="true" time="600" reflect="false"]
 #佐伯和己
 これからよろしく、亜璃杏。[p]
