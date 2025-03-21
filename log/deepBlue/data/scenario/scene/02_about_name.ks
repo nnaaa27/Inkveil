@@ -2,7 +2,7 @@
 *start
 [play_start]
 
-[bg storage="繁華街の駅前（夜）.jpg" method="fadeIn" time="1000" local_file="繁華街の駅前（夜）.jpg"]
+[bg storage="住宅街２（夜・照明ON）.jpg" method="fadeIn" time="1000" local_file="住宅街２（夜・照明ON）.jpg"]
 [playbgm storage="やさしい雪.mp3" local_file="やさしい雪.mp3" time="1000" volume="50" loop="true"]
 
 [add_kazumi]
@@ -32,7 +32,7 @@
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/呆れ.png" local_file="呆れ.png" cross="true" time="600" reflect="false"]
 #佐伯和己
 …な、なんだって？[p]
-[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_c哀.png" local_file="s_c哀.png" cross="true" time="600" reflect="false"]
+[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_c悲.png" local_file="s_c悲.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 やっぱり、まだそこまで仲良くはないですよね…。[p]
 #佐伯和己
@@ -138,7 +138,5 @@
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_a微笑み2.png" local_file="s_a微笑み2.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 はい、よろしくお願いします。和己さん。[p]
-
-[p]
 
 [play_end]

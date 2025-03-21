@@ -1,7 +1,7 @@
 *start
 [play_start]
 
-[bg storage="繁華街の駅前（夜）.jpg" method="fadeIn" time="1000" local_file="繁華街の駅前（夜）.jpg"]
+[bg storage="住宅街２（夜・照明ON）.jpg" method="fadeIn" time="1000" local_file="住宅街２（夜・照明ON）.jpg"]
 [playbgm storage="やさしい雪.mp3" local_file="やさしい雪.mp3" time="1000" volume="50" loop="true"]
 
 [add_kazumi]
@@ -246,7 +246,7 @@
 ……。[p]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_c嫌.png" local_file="s_c嫌.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
-…私、あのライブにいたんです。[r]
+私、あのライブにいたんです。[r]
 かすみちゃんと一緒に、城木さんに招待してもらった最前列に。[p]
 #瀬奈亜璃杏
 だから、私もあの場にいたし、[r]
@@ -261,10 +261,11 @@
 #佐伯和己
 それでもライブを強行したのは俺たちだ。[r]
 お前には何の責任もないよ。[p]
-[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_b真剣2.png" local_file="s_b真剣2.png" cross="true" time="600" reflect="false"]
+[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_b真剣.png" local_file="s_b真剣.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
-…でも、それなら佐伯さんだって、[r]
+でも、それなら佐伯さんだって、[r]
 一人で背負うものじゃないと思います。[p]
+[chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_b真剣2.png" local_file="s_b真剣2.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 アイドルは一人でステージに立たなくちゃいけない。[p]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_c悲.png" local_file="s_c悲.png" cross="true" time="600" reflect="false"]

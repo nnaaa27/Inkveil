@@ -32,6 +32,15 @@
 ;最初は右下のメニューボタンを非表示にする
 [hidemenubutton]
 
+;システム変数
+[iscript]
+    // NPC 表示
+    f.npc_show = 'OFF';
+    // ダイス表示
+    f.dice_show = 'ON';
+[endscript]
+
+
 ;タイトル画面へ移動
 ;@jump storage="title.ks"
 
@@ -69,6 +78,11 @@
     [add_theme_button ]
 [endmacro]
 
+[macro name="npc_chara_show"]
+    [if exp="f.npc_show == 'ON'" ]
+        [chara_show *]
+    [endif]
+[endmacro]
 
 [macro name="add_kazumi"]
     [iscript]
@@ -100,18 +114,32 @@
     [chara_move left=%left|582 top="100" width="520" anim="1" time="1000" name="佐伯和己"]
 [endmacro]
 
+
+[macro name="coc_dice"]
+[if exp="f.dice_show == 'ON'" ]
+    [iscript]
+        mp.text= "CCB<="+mp.num_success+"【"+mp.aim+"】"+" > 「"+mp.dice_result+"」 > "+mp.result;
+    [endscript]
+    #&mp.chara_name
+    [dice array_dice="100" adjusted_val="0" aim=%aim secret="" num_success=%num_success flag_success="below" user_id="44069" array_result=%dice_result result_str=&mp.text sub_str=%sub_str addstory="1" ]
+[endif]
+[endmacro]
+
+
 [macro name="play_end"]
+
     [cancelskip]
     [autostop]
+    #
     [p]
     @jump storage="first.ks"
     
 [endmacro]
 
-
 ; 回想を追加
 [setreplay name="02_send_home" storage="scene/02_send_home.ks" label="*start"]
 [setreplay name="02_about_name" storage="scene/02_about_name.ks" label="*start"]
+[setreplay name="04_arrival" storage="scene/04_arrival.ks" label="*start"]
 [setreplay name="05_meteor_shower" storage="scene/05_meteor_shower.ks" label="*start"]
 [setreplay name="06_underground_arrival" storage="scene/06_underground_arrival.ks" label="*start"]
 

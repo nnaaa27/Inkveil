@@ -45,10 +45,11 @@
 
 *page_0
 
-[replay_box name="02_send_home" graphic="繁華街の駅前（夜）.jpg" text="２章 ある日の帰り道" x_num=0 y_num=0]
-[replay_box name="02_about_name" graphic="繁華街の駅前（夜）.jpg" text="２章 名前" x_num=1 y_num=0]
-[replay_box name="05_meteor_shower" graphic="夜空.png" text="５章 双子座流星群" x_num=2 y_num=0]
-[replay_box name="06_underground_arrival" graphic="地下室.jpg" text="６章 地下室、合流" x_num=3 y_num=0]
+[replay_box name="02_send_home" graphic="住宅街２（夜・照明ON）.jpg" text="２章 ある日の帰り道" x_num=0 y_num=0]
+[replay_box name="02_about_name" graphic="住宅街２（夜・照明ON）.jpg" text="２章 名前呼び" x_num=1 y_num=0]
+[replay_box name="04_arrival" graphic="night-room3.jpg" text="４章 到着" x_num=2 y_num=0]
+[replay_box name="05_meteor_shower" graphic="流星群.jpg" text="５章 双子座流星群" x_num=0 y_num=1]
+[replay_box name="06_underground_arrival" graphic="地下室.jpg" text="６章 地下室、合流" x_num=1 y_num=1]
 
 ; [replay_box x_num=4 y_num=0]
 ; [replay_box x_num=0 y_num=1]

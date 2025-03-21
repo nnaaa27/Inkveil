@@ -17,12 +17,12 @@
 
 #
 無機質な石張りの空間の中、設置された手術台の上、[r]
-瀬奈亜璃杏は、儀間に片腕で首を絞められたまま強引に押さえつけられていた。[p]
+瀬奈亜璃杏は、儀間貞人に片腕で首を絞められたまま強引に押さえつけられていた。[p]
 
 そして、儀間の空いた右手には鋭利な鉄の棒が握られ、[r]
-今まさに瀬奈亜璃杏に振り下ろそうと構えている。[p]
+今まさに彼女に振り下ろそうと構えている。[p]
 
-けれど、その場から動くことができなかった。[p]
+けれど、佐伯和己はその場から動くことができなかった。[p]
 何故なら――[p]
 
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/驚き.png" local_file="驚き.png" cross="true" time="600" reflect="false"]
@@ -48,7 +48,16 @@
 
 ――もう動くことはなくなった。[p]
 
-瀬奈亜璃杏は殺人を犯し、佐伯和己はその現場を目撃した。[p]
+瀬奈亜璃杏は殺人を犯し、佐伯和己はその現場を目撃した。[r]
+1d4/1d6+1 の正気度ロール[p]
+
+[coc_dice chara_name="佐伯和己" aim="SANチェック" num_success=58 dice_result=9 result="成功" sub_str="SAN：58⇒55（3減少）"]
+; #佐伯和己
+; SAN：58⇒55（3減少）[p]
+
+[coc_dice chara_name="瀬奈亜璃杏" aim="SANチェック" num_success=60 dice_result=58 result="成功" sub_str="SAN：60⇒59（1減少）"]
+; #瀬奈亜璃杏
+; SAN：60⇒59（1減少）[p]
 
 ; #佐伯和己
 ; [dice array_dice="100" adjusted_val="0" aim="SAN" secret="" num_success="50" flag_success="below" chara_name="佐伯和己" user_id="44069" array_result="22" result_str="SAN：【1d100】を振りました。結果は「22」成功です。(成功値50以下)(各ダイス目：22)" val="SAN：【1d100】を振りました。結果は「22」成功です。(成功値50以下)(各ダイス目：22)" addstory="1" name="佐伯和己"]
@@ -212,7 +221,5 @@
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_t号泣5.png" local_file="s_t号泣5_.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 はい。[p]
-
-[p]
 
 [play_end]

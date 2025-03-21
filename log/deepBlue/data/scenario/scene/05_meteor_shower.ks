@@ -2,12 +2,13 @@
 *start
 [play_start]
 
-[bg storage="夜空.png" method="fadeIn" time="1000" local_file="夜空.jpg"]
+[bg storage="流星群.jpg" method="fadeIn" time="1000" local_file="流星群.jpg"]
 [playbgm storage="花撫寺_2_Twiligh_bottle.mp3" local_file="花撫寺_2_Twiligh_bottle.mp3" time="1000" volume="50" loop="true"]
 
 #瀬奈亜璃杏
 わぁ…！[p]
 
+[bg storage="夜空.png" method="fadeIn" time="1000" local_file="夜空.jpg"]
 [add_kazumi]
 [add_aria img="s_a微笑み2.png"]
 
@@ -57,7 +58,7 @@
 要するに、そう簡単に願いは叶わないってことなんだろうが。[p]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_a笑顔.png" local_file="s_a笑顔.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
-ふふ、そうですね。[p]
+ふふ、そうかもしれません。[p]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/普通.png" local_file="普通.png" cross="true" time="600" reflect="false"]
 #佐伯和己
 折角の機会だ。[r]
@@ -84,7 +85,7 @@
 どうせ叶うか分からないんだしな、流れ星なんて。[p]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_a笑み.png" local_file="s_a笑み.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
-……そうですね。[p]
+そうですね…。[p]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/s_bきょとん.png" local_file="s_bきょとん.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 じゃあなんだろう……。[r]
@@ -250,7 +251,5 @@
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/笑み.png" local_file="笑み.png" cross="true" time="600" reflect="false"]
 #佐伯和己
 …ああ、分かったよ。[p]
-
-[p]
 
 [play_end]

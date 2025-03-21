@@ -132,15 +132,20 @@ timerID = setTimeout(function(){
         j_viewDiceArea.hide();
     });
     
-},5000);
+},1500);
 
 
 [endscript]
 
-[wait time=4000]
-[text val=%result_str ]
-[p]
+[playse storage="nc42340_ダイス音・2（2D10）.wav" local_file="nc42340_ダイス音・2（2D10）.wav" volume="30" loop="false"]
+; [wait time=5000]
 
+[text val=%result_str ]
+[if exp="mp.sub_str != ''" ]
+    [r]
+    [text val=%sub_str]
+[endif]
+[p]
 [endmacro]
 
 [return]

@@ -27,6 +27,9 @@
 	tf.current_ch_speed = parseInt(TG.config.chSpeed);
 	tf.current_auto_speed = parseInt(TG.config.autoSpeed);
 
+	tf.npc_show = f.npc_show;
+	tf.dice_show = f.dice_show;
+	
 	tf.text_skip ="ON";
 	if(TG.config.unReadTextSkip != "true"){
 		tf.text_skip ="OFF";
@@ -195,6 +198,20 @@
 ;	未読スキップオン
 	[button name="unread_on" fix="true" target="*skip_on" graphic="&tf.btn_path_off" width="32" height="32" x="956" y="360"]
 
+
+;------------------------------------------------------------------------------------------------------
+; ダイス表示
+;------------------------------------------------------------------------------------------------------
+;	ダイス表示オンオフ
+	[button name="dice_show" fix="true" target="*dice_show" graphic="&tf.btn_path_off" width="32" height="32" x="956" y="435"]
+
+;------------------------------------------------------------------------------------------------------
+; NPC表示
+;------------------------------------------------------------------------------------------------------
+;	NPC表示オンオフ
+	[button name="npc_show" fix="true" target="*npc_show" graphic="&tf.btn_path_off" width="32" height="32" x="956" y="0"]
+
+
 ;------------------------------------------------------------------------------------------------------
 ; コンフィグ起動時の画面更新
 ;------------------------------------------------------------------------------------------------------
@@ -206,6 +223,8 @@
 	[call target="*load_ch_img"]
 	[call target="*load_auto_img"]
 	[call target="*load_skip_img"]
+	[call target="*load_dice_img"]
+	[call target="*load_npc_img"]
 
 	[test_message_start]
 
@@ -333,6 +352,45 @@
 
 [return]
 
+
+;--------------------------------------------------------------------------------
+; ダイス表示
+;--------------------------------------------------------------------------------
+*dice_show
+
+	[if exp="tf.dice_show == 'ON'"]
+	[free layer="0" name="dice_show" time="0" wait="true"]
+	[eval exp="tf.dice_show = 'OFF'"]
+	[else]
+	[image name="dice_show" layer="0" storage="&tf.img_check" x="956" y="435" width="32" height="32"]
+	[eval exp="tf.dice_show = 'ON'"]
+	[endif]
+	
+	[iscript]
+		f.dice_show = tf.dice_show
+	[endscript]
+
+[return]
+
+;--------------------------------------------------------------------------------
+; NPC表示
+;--------------------------------------------------------------------------------
+*npc_show
+
+	[if exp="tf.npc_show == 'ON'"]
+	[free layer="0" name="npc_show" time="0" wait="true"]
+	[eval exp="tf.npc_show = 'OFF'"]
+	[else]
+	[image name="npc_show" layer="0" storage="&tf.img_check" x="956" y="0" width="32" height="32"]
+	[eval exp="tf.npc_show = 'ON'"]
+	[endif]
+	
+	[iscript]
+		f.npc_show = tf.npc_show
+	[endscript]
+
+[return]
+
 ;================================================================================
 
 ; 画像の読み込み
@@ -370,5 +428,17 @@
 *load_skip_img
 	[if exp="tf.text_skip == 'ON'"]
 	[image layer="0" name="skip" storage="&tf.img_check" x="956" y="360"]
+	[endif]
+[return]
+
+*load_dice_img
+	[if exp="tf.dice_show == 'ON'"]
+	[image layer="0" name="dice_show" storage="&tf.img_check" x="956" y="435"]
+	[endif]
+[return]
+
+*load_npc_img
+	[if exp="tf.npc_show == 'ON'"]
+	[image layer="0" name="npc_show" storage="&tf.img_check" x="956" y="0"]
 	[endif]
 [return]
