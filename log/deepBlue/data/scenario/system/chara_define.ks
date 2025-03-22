@@ -1,3 +1,6 @@
 [chara_new name="佐伯和己" jname="佐伯和己" storage="tomei.png"]
 [chara_new name="瀬奈亜璃杏" jname="瀬奈亜璃杏" storage="tomei.png"]
 [chara_new name="城木丈" jname="城木丈" storage="tomei.png"]
+[chara_new name="儀間貞人" jname="儀間貞人" storage="tomei.png"]
+[chara_new name="刑事" jname="刑事" storage="tomei.png"]
+[chara_new name="少女" jname="少女" storage="tomei.png"]

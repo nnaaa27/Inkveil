@@ -52,17 +52,8 @@
 1d4/1d6+1 の正気度ロール[p]
 
 [coc_dice chara_name="佐伯和己" aim="SANチェック" num_success=58 dice_result=9 result="成功" sub_str="SAN：58⇒55（3減少）"]
-; #佐伯和己
-; SAN：58⇒55（3減少）[p]
 
 [coc_dice chara_name="瀬奈亜璃杏" aim="SANチェック" num_success=60 dice_result=58 result="成功" sub_str="SAN：60⇒59（1減少）"]
-; #瀬奈亜璃杏
-; SAN：60⇒59（1減少）[p]
-
-; #佐伯和己
-; [dice array_dice="100" adjusted_val="0" aim="SAN" secret="" num_success="50" flag_success="below" chara_name="佐伯和己" user_id="44069" array_result="22" result_str="SAN：【1d100】を振りました。結果は「22」成功です。(成功値50以下)(各ダイス目：22)" val="SAN：【1d100】を振りました。結果は「22」成功です。(成功値50以下)(各ダイス目：22)" addstory="1" name="佐伯和己"]
-; #瀬奈亜璃杏
-; [dice array_dice="100" adjusted_val="0" aim="SAN" secret="" num_success="50" flag_success="below" chara_name="瀬奈亜璃杏" user_id="44069" array_result="84" result_str="SAN：【1d100】を振りました。結果は「84」失敗です。(成功値50以下)(各ダイス目：84)" val="SAN：【1d100】を振りました。結果は「84」失敗です。(成功値50以下)(各ダイス目：84)" addstory="1" name="瀬奈亜璃杏"]
 
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/悲.png" local_file="悲.png" cross="true" time="600" reflect="false"]
 #佐伯和己

@@ -35,6 +35,7 @@
 ;システム変数
 [iscript]
     // NPC 表示
+    //f.npc_show = 'ON';
     f.npc_show = 'OFF';
     // ダイス表示
     f.dice_show = 'ON';
@@ -92,7 +93,7 @@
             f.file_name = "chara/佐伯和己/普通.png"
         }
     [endscript]
-    [chara_show storage=&f.file_name local_file=%img|"普通.png" left=%left|149 top="15" width="500"  time="1000" wait="true" zindex="1" name="佐伯和己" reflect="false" depth="front"]
+    [chara_show storage=&f.file_name local_file=%img|"普通.png" left=%left|149 top="15" width="500"  time="1000" wait="true" zindex="3" name="佐伯和己" reflect="false" depth="front"]
 [endmacro]
 
 [macro name="move_kazumi"]
@@ -107,11 +108,22 @@
             f.file_name = "chara/瀬奈亜璃杏/s_a笑み.png"
         }
     [endscript]
-    [chara_show storage=&f.file_name local_file=%img|"s_a笑み.png" left=%left|582 top="100" width="520" time="1000" wait="true" zindex="1" name="瀬奈亜璃杏" reflect="false" depth="front"]
+    [chara_show storage=&f.file_name local_file=%img|"s_a笑み.png" left=%left|582 top="100" width="520" time="1000" wait="true" zindex="2" name="瀬奈亜璃杏" reflect="false" depth="front"]
+[endmacro]
+
+[macro name="add_aria2"]
+    [iscript]
+        if (mp.img){
+            f.file_name = "chara/瀬奈亜璃杏/" + mp.img
+        }else{
+            f.file_name = "chara/瀬奈亜璃杏/s_a笑み.png"
+        }
+    [endscript]
+    [chara_show storage=&f.file_name local_file=%img|"s_a笑み.png" left=%left|550 top="100" width="600" time="1000" wait="true" zindex="2" name="瀬奈亜璃杏" reflect="false" depth="front"]
 [endmacro]
 
 [macro name="move_aria"]
-    [chara_move left=%left|582 top="100" width="520" anim="1" time="1000" name="佐伯和己"]
+    [chara_move left=%left|582 top="100" width="520" anim="1" time="1000" name="瀬奈亜璃杏"]
 [endmacro]
 
 
@@ -121,7 +133,14 @@
         mp.text= "CCB<="+mp.num_success+"【"+mp.aim+"】"+" > 「"+mp.dice_result+"」 > "+mp.result;
     [endscript]
     #&mp.chara_name
-    [dice array_dice="100" adjusted_val="0" aim=%aim secret="" num_success=%num_success flag_success="below" user_id="44069" array_result=%dice_result result_str=&mp.text sub_str=%sub_str addstory="1" ]
+    [dice array_dice=%array_dice|100 adjusted_val="0" aim=%aim secret="" num_success=%num_success flag_success="below" user_id="44069" array_result=%dice_result result_str=&mp.text sub_str=%sub_str addstory="1" ]
+[endif]
+[endmacro]
+
+[macro name="other_dice"]
+[if exp="f.dice_show == 'ON'" ]
+    #&mp.chara_name
+    [dice array_dice=%array_dice|100 adjusted_val="0" aim=%aim secret="" num_success=%num_success flag_success="below" user_id="44069" array_result=%dice_result result_str=%main_str sub_str=%sub_str addstory="1" ]
 [endif]
 [endmacro]
 
@@ -132,7 +151,14 @@
     [autostop]
     #
     [p]
-    @jump storage="first.ks"
+    [mask]
+    [chara_hide_all time=0]
+    ;メッセージボックスは非表示
+    @layopt layer="message" visible=false
+    [clearfix name="role_button"]
+    [freeimage layer="base"]
+    [mask_off]
+    @jump storage="title.ks"
     
 [endmacro]
 
@@ -142,7 +168,10 @@
 [setreplay name="04_arrival" storage="scene/04_arrival.ks" label="*start"]
 [setreplay name="05_meteor_shower" storage="scene/05_meteor_shower.ks" label="*start"]
 [setreplay name="06_underground_arrival" storage="scene/06_underground_arrival.ks" label="*start"]
-
+[setreplay name="09_staff_room" storage="scene/09_staff_room.ks" label="*start"]
+[setreplay name="11_until_death_do_us_part.ks" storage="scene/11_until_death_do_us_part.ks" label="*start"]
+[setreplay name="11_sound_of_a_shot" storage="scene/11_sound_of_a_shot.ks" label="*start"]
+[setreplay name="end_last_encore" storage="scene/end_last_encore.ks" label="*start"]
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Rapter ここまで
 

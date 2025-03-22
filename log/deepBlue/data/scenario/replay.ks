@@ -21,7 +21,7 @@
         // 横
         f.x_list = [80,310,540,770,1000];
         // 縦
-        f.y_list = [170,320];
+        f.y_list = [170,320,470];
         f.x=f.x_list[mp.x_num];
         f.y1=f.y_list[mp.y_num];
         f.y2=f.y_list[mp.y_num] + 110;
@@ -45,11 +45,15 @@
 
 *page_0
 
-[replay_box name="02_send_home" graphic="住宅街２（夜・照明ON）.jpg" text="２章 ある日の帰り道" x_num=0 y_num=0]
-[replay_box name="02_about_name" graphic="住宅街２（夜・照明ON）.jpg" text="２章 名前呼び" x_num=1 y_num=0]
+[replay_box name="02_send_home" graphic="住宅街_夜.jpg" text="２章 ある日の帰り道" x_num=0 y_num=0]
+[replay_box name="02_about_name" graphic="住宅街_夜.jpg" text="２章 名前呼び" x_num=1 y_num=0]
 [replay_box name="04_arrival" graphic="night-room3.jpg" text="４章 到着" x_num=2 y_num=0]
 [replay_box name="05_meteor_shower" graphic="流星群.jpg" text="５章 双子座流星群" x_num=0 y_num=1]
 [replay_box name="06_underground_arrival" graphic="地下室.jpg" text="６章 地下室、合流" x_num=1 y_num=1]
+[replay_box name="09_staff_room" graphic="控室.jpg" text="９章 控室" x_num=0 y_num=2]
+[replay_box name="11_until_death_do_us_part.ks" graphic="ステージ.jpg" text="11章 死がふたりを分かつまで" x_num=1 y_num=2]
+[replay_box name="11_sound_of_a_shot" graphic="ステージ.jpg" text="11章 銃声" x_num=2 y_num=2]
+[replay_box name="end_last_encore" graphic="刑務所.jpg" text="End Blue「ラストアンコール」" x_num=3 y_num=2]
 
 ; [replay_box x_num=4 y_num=0]
 ; [replay_box x_num=0 y_num=1]
