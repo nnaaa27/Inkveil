@@ -2,7 +2,7 @@
 [play_start]
 
 [bg storage="控室.jpg" method="fadeIn" time="1000" local_file="控室.jpg"]
-[playbgm storage="闇夜.mp3" local_file="闇夜.mp3" time="1000" volume="50" loop="true"]
+[playbgm storage="kyuutai.mp3" local_file="kyuutai.mp3" time="1000" volume="50" loop="true"]
 #
 控え室まで向かえば、呆気なく瀬奈亜璃杏の姿を見つけることができる。[p]
 [add_kazumi img="真剣.png"]
@@ -32,7 +32,7 @@
 #瀬奈亜璃杏
 [other_dice chara_name="瀬奈亜璃杏" aim="" array_dice=3 dice_result=3  main_str="1d3 > 3" sub_str="SAN：59→56（SAN減少により、一時的に自分の意思で会話が可能）"]
 
-[playbgm storage="混濁.mp3" local_file="混濁.mp3" time="1000" volume="50" loop="true"]
+[playbgm storage="雪の終わりに.mp3" local_file="雪の終わりに.mp3" time="1000" volume="50" loop="true"]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/i_b恐怖.png" local_file="i_b恐怖.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 ……！[p]
@@ -148,7 +148,7 @@
 …そうか。歌うことは好きか？[p]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/i_t号泣2.png" local_file="i_t号泣2.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
-…はい、好きです。ずっと昔から。[p]
+…はい、好きです。歌うことは、ずっと昔から。[p]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/真剣.png" local_file="真剣.png" cross="true" time="600" reflect="false"]
 #佐伯和己
 なあ、亜璃杏。[p]

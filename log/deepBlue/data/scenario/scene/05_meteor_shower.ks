@@ -3,7 +3,8 @@
 [play_start]
 
 [bg storage="流星群.jpg" method="fadeIn" time="1000" local_file="流星群.jpg"]
-[playbgm storage="花撫寺_2_Twiligh_bottle.mp3" local_file="花撫寺_2_Twiligh_bottle.mp3" time="1000" volume="50" loop="true"]
+; [playbgm storage="maou_ bgm_karaoke_25_santa.mp3" local_file="maou_bgm_karaoke_25_santa.mp3" time="1000" volume="50" loop="true"]
+[playbgm storage="星空の見る夢.mp3" local_file="星空の見る夢.mp3" time="1000" volume="50" loop="true"]
 
 #瀬奈亜璃杏
 わぁ…！[p]

@@ -2,7 +2,7 @@
 *start
 [play_start]
 
-[playbgm storage="混濁.mp3" local_file="混濁.mp3" time="1000" volume="50" loop="true"]
+[playbgm storage="冬待人.mp3" local_file="冬待人.mp3" time="1000" volume="50" loop="true"]
 
 *next
 
@@ -277,12 +277,12 @@
 少女は確かにこちらを見つめ、微笑んでいた。[r]
 ひどく見覚えのある表情で。[p]
 #
-そして、あなたにひそりと告げる。[p]
+そして、あなた達にひそりと告げる。[p]
 [freeimage layer="base"]
 [chara_hide name="少女" pos_mode="true" time="1000" wait="true"]
 [npc_chara_show storage="chara/少女/07.幽谷きらら.png" local_file="07.幽谷きらら.png" left="350" top="-200" width="600" time="1000" wait="true" zindex="1" name="少女" reflect="false" depth="front"]
 
-#少女
+#？？？
 また会えたね。[p]
 [playbgm storage="パラサイトブルー（インスト）.mp3" local_file="パラサイトブルー（インスト）.mp3" time="0" volume="50" loop="true"]
 

@@ -2,7 +2,7 @@
 [play_start]
 
 [bg storage="ステージ.jpg" time="10"]
-[playbgm storage="思い出と深呼吸.mp3" local_file="思い出と深呼吸.mp3" time="1000" volume="50" loop="true"]
+[playbgm storage="星空の見る夢.mp3" local_file="星の見る夢.mp3" time="1000" volume="50" loop="true"]
 [add_kazumi img="閉じ.png"]
 [add_aria2 img="i_c悲3.png"]
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/思案.png" local_file="思案.png" cross="true" time="0" reflect="false"]

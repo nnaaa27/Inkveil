@@ -26,10 +26,10 @@
 一筋の血が垂れる。[p]
 [playse storage="逃げ惑う人々.mp3" local_file="逃げ惑う人々.mp3" volume="50" loop="false"]
 #
-その血が一滴、舞台上の床を汚した時。[r]
+血が一滴、舞台上の床を汚した時。[r]
 その音を合図にしたように観客席から一筋の金切り声が木霊した。[p]
 
-[playbgm storage="闇夜.mp3" local_file="闇夜.mp3" time="1000" volume="50" loop="true"]
+[playbgm storage="munashisatohoshizora.mp3" local_file="munashisatohoshizora.mp3" time="1000" volume="50" loop="true"]
 
 #
 会場が嵐のような混沌と絶叫の波に呑まれる中、[r]
@@ -65,7 +65,7 @@
 #儀間貞人
 …女王体を消滅させたのに何故？という顔ですね。[p]
 #儀間貞人
-申し訳ありません、あなた方には二つ嘘をついていました。[p]
+申し訳ありません、佐伯さんには二つ嘘をついていました。[p]
 
 [chara_mod name="儀間貞人" storage="chara/儀間貞人/01.儀間貞人.png" local_file="01.儀間貞人.png" cross="true" time="600" reflect="false"]
 #儀間貞人
@@ -149,7 +149,7 @@
 [playse storage="布団に倒れ込む.mp3" local_file="布団に倒れ込む.mp3" volume="100" loop="false"]
 
 [chara_move left="788" top="11" width="393" anim="1" time="0" name="儀間貞人"]
-[chara_move left="540" top="142" width="572" anim="1" time="500" name="瀬奈亜璃杏"]
+[chara_move left="540" top="200" width="572" anim="1" time="500" name="瀬奈亜璃杏"]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/i_b恐怖.png" local_file="i_b恐怖.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 …！！[p]
@@ -210,6 +210,9 @@
 [chara_mod name="儀間貞人" storage="chara/儀間貞人/01.儀間貞人.png" local_file="01.儀間貞人.png" cross="true" time="600" reflect="false"]
 #儀間貞人
 すべてはあなたの選択です、佐伯さん。[p]
+
+[playbgm storage="決断の時.mp3" local_file="決断の時.mp3" time="1000" volume="50" loop="true"]
+
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/閉じ.png" local_file="閉じ.png" cross="true" time="600" reflect="false"]
 #佐伯和己
 …………。[p]
@@ -343,13 +346,13 @@
 会場にさらに一発の銃声。[p]
 [playse storage="倒れる05.mp3" local_file="倒れる05.mp3" volume="50" loop="false"]
 [chara_mod name="儀間貞人" storage="chara/儀間貞人/03.儀間貞人.png" local_file="03.儀間貞人.png" cross="true" time="600" reflect="false"]
-[chara_move left="540" top="200" width="572" anim="1" time="500" name="瀬奈亜璃杏"]
+[chara_move  top="80" anim="1" time="500" name="儀間貞人"]
 
 #儀間貞人
 儀間の腹部から染み出すように血が滲み、力なくその場に彼が膝をついた。[p]
 #儀間貞人
 そして、息絶えるまでの十数秒、呻くように呟く。[p]
-[playbgm storage="混濁.mp3" local_file="混濁.mp3" time="1000" volume="50" loop="true"]
+[playbgm storage="冬待人.mp3" local_file="冬待人.mp3" time="1000" volume="50" loop="true"]
 [chara_mod name="儀間貞人" storage="chara/儀間貞人/04.儀間貞人.png" local_file="04.儀間貞人.png" cross="true" time="600" reflect="false"]
 #儀間貞人
 ……はは、…は。[r]
@@ -367,6 +370,8 @@
 ; [chara_move left="154" top="16" width="500" anim="1" time="500" name="佐伯和己"]
 #佐伯和己
 亜璃杏…怪我は、ないか？[p]
+[playse storage="布団に倒れ込む.mp3" local_file="布団に倒れ込む.mp3" volume="80" loop="false"]
+[move_aria2]
 [chara_mod name="瀬奈亜璃杏" storage="chara/瀬奈亜璃杏/i_t号泣2.png" local_file="i_t号泣2.png" cross="true" time="600" reflect="false"]
 #瀬奈亜璃杏
 …はい。私は、大丈夫です…。[p]

@@ -65,6 +65,7 @@
     [cm  ]
     [clearfix]
     [start_keyconfig]
+    [stopbgm]
     [freeimage layer="1"]
     [bg storage="black.jpg" method="fadeIn" time="1000" local_file="black.jpg"]
     
@@ -76,7 +77,7 @@
     [position layer=message0 page=fore margint="45" marginl="50" marginr="70" marginb="60"]
     ;テーマ適応、メニューボタン追加
     [plugin name="theme"]
-    [add_theme_button ]
+    [add_theme_button]
 [endmacro]
 
 [macro name="npc_chara_show"]
@@ -124,6 +125,9 @@
 
 [macro name="move_aria"]
     [chara_move left=%left|582 top="100" width="520" anim="1" time="1000" name="瀬奈亜璃杏"]
+[endmacro]
+[macro name="move_aria2"]
+    [chara_move left=%left|550 top="100" width="600" anim="1" time="1000" name="瀬奈亜璃杏"]
 [endmacro]
 
 

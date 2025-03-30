@@ -2,7 +2,7 @@
 [play_start]
 
 [bg storage="住宅街_夜.jpg" method="fadeIn" time="1000" local_file="住宅街_夜.jpg"]
-[playbgm storage="やさしい雪.mp3" local_file="やさしい雪.mp3" time="1000" volume="50" loop="true"]
+[playbgm storage="星空の見る夢.mp3" local_file="星空の見る夢.mp3" time="1000" volume="50" loop="true"]
 
 [add_kazumi]
 [add_aria]

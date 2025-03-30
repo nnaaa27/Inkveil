@@ -2,7 +2,7 @@
 [play_start]
 
 [bg storage="night-room3.jpg" method="fadeIn" time="1000" local_file="night-room3.jpg"]
-[playbgm storage="闇夜.mp3" local_file="闇夜.mp3" time="1000" volume="50" loop="true"]
+[playbgm storage="moeochirusakura.mp3" local_file="moeochirusakura.mp3" time="1000" volume="50" loop="true"]
 [playse storage="ドアを開ける2.mp3" local_file="ドアを開ける2.mp3" volume="50" loop="false"]
 
 
@@ -119,7 +119,9 @@
 #
 ふらふらと出て行った城木は、そのまま帰ってくることはなかった。[p]
 
-[playbgm storage="混濁.mp3" local_file="混濁.mp3" time="1000" volume="50" loop="true"]
+[playbgm storage="冬待人.mp3" local_file="冬待人.mp3" time="1000" volume="50" loop="true"]
+
+; [playbgm storage="雪の終わりに.mp3" local_file="雪の終わりに.mp3" time="1000" volume="50" loop="true"]
 
 [chara_mod name="佐伯和己" storage="chara/佐伯和己/思案.png" local_file="思案.png" cross="true" time="600" reflect="false"]
 #佐伯和己
